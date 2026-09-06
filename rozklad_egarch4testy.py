@@ -1,3 +1,27 @@
+"""
+rozklad_egarch4testy.py - Diagnostyka rozkładu parametrów EGARCH
+
+Analogicznie do rozklad_garch4testy.py, ale dla modelu EGARCH(1,1):
+ponowna estymacja parametrów dla każdej spółki i testy dopasowania
+rozkładu (normalność + najlepszy rozkład teoretyczny) dla każdego
+parametru modelu.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_EGARCH4TEST.xlsx, analiza_statystyczna_egarch41/*.png
+
+----------------------------------------------------------------------
+
+rozklad_egarch4testy.py - EGARCH parameter distribution diagnostics
+
+Analogous to rozklad_garch4testy.py, but for the EGARCH(1,1) model:
+re-estimates the parameters for each company and runs distribution-fit
+tests (normality + best theoretical distribution) for each model
+parameter.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_EGARCH4TEST.xlsx, analiza_statystyczna_egarch41/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
