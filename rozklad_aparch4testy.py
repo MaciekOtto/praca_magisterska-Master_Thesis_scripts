@@ -1,3 +1,27 @@
+"""
+rozklad_aparch4testy.py - Diagnostyka rozkładu parametrów APARCH
+
+Analogicznie do rozklad_garch4testy.py, ale dla modelu APARCH(1,1):
+ponowna estymacja parametrów dla każdej spółki i testy dopasowania
+rozkładu dla każdego parametru modelu.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_APARCH_4testy.xlsx,
+         analiza_statystyczna_aparch4testy1/*.png
+
+----------------------------------------------------------------------
+
+rozklad_aparch4testy.py - APARCH parameter distribution diagnostics
+
+Analogous to rozklad_garch4testy.py, but for the APARCH(1,1) model:
+re-estimates the parameters for each company and runs distribution-fit
+tests for each model parameter.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_APARCH_4testy.xlsx,
+        analiza_statystyczna_aparch4testy1/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
