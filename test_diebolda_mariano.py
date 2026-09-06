@@ -1,3 +1,36 @@
+"""
+test_diebolda_mariano.py - Test Diebolda-Mariano (GARCH vs. ML)
+
+Porównuje trafność prognoz out-of-sample par modeli GARCH-rodziny
+(GARCH, GJR-GARCH) i modeli uczenia maszynowego (RF, LSTM, SVR) za
+pomocą testu Diebolda-Mariano opartego na błędzie kwadratowym względem
+realized variance. Test przeprowadzany jest osobno dla każdej spółki
+(firm-by-firm), a wyniki agregowane są przekrojowo (m.in. odsetek
+spółek, dla których dany model istotnie przewyższa drugi).
+
+Wejście: dane1000stopy.xlsx, garch_prognozy_oos_fixed.parquet,
+         rf_prognozy_oos.parquet, lstm_prognozy_oos.parquet,
+         svr_prognozy_oos.parquet
+Wyjście: wyniki_diebold_mariano.xlsx
+
+----------------------------------------------------------------------
+
+test_diebolda_mariano.py - Diebold-Mariano test (GARCH vs. ML)
+
+Compares out-of-sample forecast accuracy for pairs of GARCH-family
+models (GARCH, GJR-GARCH) and machine learning models (RF, LSTM, SVR)
+using the Diebold-Mariano test based on squared-error loss relative to
+realized variance. The test is run separately for each company
+(firm-by-firm), and the results are aggregated cross-sectionally
+(e.g., the share of companies where one model significantly
+outperforms the other).
+
+Input: dane1000stopy.xlsx, garch_prognozy_oos_fixed.parquet,
+       rf_prognozy_oos.parquet, lstm_prognozy_oos.parquet,
+       svr_prognozy_oos.parquet
+Output: wyniki_diebold_mariano.xlsx
+"""
+
 import re
 import pandas as pd
 import numpy as np
