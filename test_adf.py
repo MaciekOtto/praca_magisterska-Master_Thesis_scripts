@@ -1,3 +1,25 @@
+"""
+test_adf.py - Test stacjonarności ADF (Augmented Dickey-Fuller)
+
+Dla każdej spółki przeprowadza rozszerzony test Dickeya-Fullera na
+szeregu stóp zwrotu, aby sprawdzić stacjonarność (H0: szereg
+niestacjonarny). Wynik uznaje się za stacjonarny przy p-value < 0.05.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_ADF_1000_stp.xlsx (statystyka ADF, p-value, wniosek)
+
+----------------------------------------------------------------------
+
+test_adf.py - ADF (Augmented Dickey-Fuller) stationarity test
+
+Runs the Augmented Dickey-Fuller test on each company's return series
+to test for stationarity (H0: the series is non-stationary). A series
+is considered stationary when p-value < 0.05.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_ADF_1000_stp.xlsx (ADF statistic, p-value, conclusion)
+"""
+
 import pandas as pd
 from statsmodels.tsa.stattools import adfuller
 import time
