@@ -1,3 +1,32 @@
+"""
+lstm_oos_rw.py - Prognozy out-of-sample: LSTM
+
+Dla każdej spółki trenuje jednowarstwową sieć LSTM (Keras/TensorFlow)
+do prognozowania zmienności (realized variance, r²) w schemacie
+rozszerzającego się okna (TRAIN_SIZE=1250, model przetrenowywany
+okresowo co RETRAIN_EVERY kroków). Obliczenia z checkpointami co 50
+spółek (CPU-only, zgodnie ze sprzętem użytym w pracy).
+
+Wejście: dane1000stopy.xlsx
+Wyjście: lstm_prognozy_oos.parquet, lstm_rmse_mae.xlsx,
+         checkpoints_lstm/
+
+----------------------------------------------------------------------
+
+lstm_oos_rw.py - Out-of-sample forecasts: LSTM
+
+For each company, trains a single-layer LSTM network (Keras/
+TensorFlow) to forecast volatility (realized variance, r²) using an
+expanding-window scheme (TRAIN_SIZE=1250, the model is periodically
+retrained every RETRAIN_EVERY steps). Computation with checkpoints
+every 50 companies (CPU-only, matching the hardware used for the
+thesis).
+
+Input: dane1000stopy.xlsx
+Output: lstm_prognozy_oos.parquet, lstm_rmse_mae.xlsx,
+        checkpoints_lstm/
+"""
+
 import pandas as pd
 import numpy as np
 import time
