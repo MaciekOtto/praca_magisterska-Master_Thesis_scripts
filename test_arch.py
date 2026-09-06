@@ -1,3 +1,27 @@
+"""
+test_arch.py - Test efektu ARCH na resztach modelu ARMA(1,1)
+
+Dla każdej spółki szacuje model ARMA(1,1) na stopach zwrotu, a
+następnie na resztach modelu przeprowadza test ARCH (het_arch, 10
+opóźnień), aby sprawdzić obecność efektów ARCH (heteroskedastyczności
+warunkowej) - H0: brak efektów ARCH.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_ARIMA_ARCH_1000_stopyzw.xlsx
+
+----------------------------------------------------------------------
+
+test_arch.py - ARCH-effect test on ARMA(1,1) residuals
+
+For each company, fits an ARMA(1,1) model to the return series, then
+runs the ARCH test (het_arch, 10 lags) on the model residuals to check
+for ARCH effects (conditional heteroskedasticity) - H0: no ARCH
+effects present.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_ARIMA_ARCH_1000_stopyzw.xlsx
+"""
+
 import pandas as pd
 import numpy as np
 import time
