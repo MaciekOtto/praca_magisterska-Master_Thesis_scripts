@@ -1,3 +1,26 @@
+"""
+desc_stats_and_vis.py - Statystyki opisowe stóp zwrotu
+
+Liczy statystyki opisowe (średnia, odchylenie standardowe, wariancja,
+skośność, kurtoza) stóp zwrotu dla każdej spółki i rysuje histogramy
+ich rozkładów (po winsoryzacji na poziomie 1%/99%, wyłącznie do celów
+wizualizacji).
+
+Wejście: dane1000stopy.xlsx
+Wyjście: statystyki_opisowe.xlsx, histogramy_statystyk.png
+
+----------------------------------------------------------------------
+
+desc_stats_and_vis.py - Descriptive statistics of returns
+
+Computes descriptive statistics (mean, standard deviation, variance,
+skewness, kurtosis) of returns for each company and plots histograms
+of their distributions (winsorized at the 1%/99% level, for
+visualization purposes only).
+
+Input: dane1000stopy.xlsx
+Output: statystyki_opisowe.xlsx, histogramy_statystyk.png
+"""
 
 import pandas as pd
 import numpy as np
