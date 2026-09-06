@@ -1,3 +1,29 @@
+"""
+error_vis.py - Porównanie błędów prognoz (RMSE/MAE) wszystkich modeli
+
+Wczytuje wyniki RMSE/MAE ze wszystkich sześciu modeli (GARCH,
+GJR-GARCH, EGARCH, APARCH, RF, LSTM, SVR) i tworzy wykresy porównawcze
+(m.in. rozkłady błędów w podziale na model), pozwalające ocenić, który
+model ma najniższe/najwyższe błędy prognoz w przekroju spółek.
+
+Wejście: garch_rmse_mae.xlsx, rf_rmse_mae.xlsx, lstm_rmse_mae.xlsx,
+         svr_rmse_mae.xlsx
+Wyjście: wykresy_porownanie/*.png
+
+----------------------------------------------------------------------
+
+error_vis.py - Forecast error (RMSE/MAE) comparison across models
+
+Loads RMSE/MAE results from all six models (GARCH, GJR-GARCH, EGARCH,
+APARCH, RF, LSTM, SVR) and produces comparative charts (e.g., error
+distributions broken down by model), allowing an assessment of which
+model has the lowest/highest forecast errors across companies.
+
+Input: garch_rmse_mae.xlsx, rf_rmse_mae.xlsx, lstm_rmse_mae.xlsx,
+       svr_rmse_mae.xlsx
+Output: wykresy_porownanie/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
