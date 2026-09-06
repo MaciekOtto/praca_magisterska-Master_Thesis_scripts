@@ -1,3 +1,29 @@
+"""
+garch.py - Estymacja modelu GARCH(1,1) (pełna próba, firm-by-firm)
+
+Dla każdej spółki szacuje model GARCH(1,1) (średnia stała, rozkład
+normalny) na całej próbie stóp zwrotu. Zapisuje oszacowane parametry
+(omega, alpha, beta) oraz warunek stacjonarności (alpha+beta < 1), a
+także histogramy rozkładu tych parametrów.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_GARCH_1000.xlsx,
+         wykresy_garch_parametry/*.png
+
+----------------------------------------------------------------------
+
+garch.py - GARCH(1,1) estimation (full sample, firm-by-firm)
+
+Fits a GARCH(1,1) model (constant mean, normal distribution) to the
+full return sample for each company. Saves the estimated parameters
+(omega, alpha, beta) and the stationarity condition (alpha+beta < 1),
+plus histograms of the parameter distributions.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_GARCH_1000.xlsx,
+        wykresy_garch_parametry/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
