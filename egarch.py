@@ -1,3 +1,27 @@
+"""
+egarch.py - Estymacja modelu EGARCH(1,1) (pełna próba, firm-by-firm)
+
+Dla każdej spółki szacuje model EGARCH(1,1) na przeskalowanych stopach
+zwrotu (x100, dla stabilności numerycznej estymacji). Spółki z ponad
+80% zer w danych lub mniej niż 100 obserwacjami są pomijane. Zapisuje
+parametry modelu oraz histogramy ich rozkładów.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: WYNIKI_EGARCH.xlsx, wykresy_egarch_parametr/*.png
+
+----------------------------------------------------------------------
+
+egarch.py - EGARCH(1,1) estimation (full sample, firm-by-firm)
+
+Fits an EGARCH(1,1) model to each company's return series, scaled by
+100 for numerical stability of the estimation. Companies with more
+than 80% zeros in the data or fewer than 100 observations are skipped.
+Saves the model parameters and histograms of their distributions.
+
+Input: dane1000stopy.xlsx
+Output: WYNIKI_EGARCH.xlsx, wykresy_egarch_parametr/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
