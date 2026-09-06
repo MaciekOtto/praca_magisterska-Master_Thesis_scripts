@@ -1,3 +1,27 @@
+"""
+rozklad_gjr4testy.py - Diagnostyka rozkładu parametrów GJR-GARCH
+
+Analogicznie do rozklad_garch4testy.py, ale dla modelu GJR-GARCH(1,1)
+(rozkład normalny, `o=1`): ponowna estymacja parametrów dla każdej
+spółki i testy dopasowania rozkładu dla każdego parametru modelu.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_GJR_z_testami_rozkładów.xlsx,
+         analiza_statystyczna_parametrów/*.png
+
+----------------------------------------------------------------------
+
+rozklad_gjr4testy.py - GJR-GARCH parameter distribution diagnostics
+
+Analogous to rozklad_garch4testy.py, but for the GJR-GARCH(1,1) model
+(normal distribution, `o=1`): re-estimates the parameters for each
+company and runs distribution-fit tests for each model parameter.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_GJR_z_testami_rozkładów.xlsx,
+        analiza_statystyczna_parametrów/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
