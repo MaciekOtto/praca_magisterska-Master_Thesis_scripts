@@ -1,3 +1,26 @@
+"""
+gjrgarch.py - Estymacja modelu GJR-GARCH(1,1) (pełna próba, firm-by-firm)
+
+Dla każdej spółki szacuje model GJR-GARCH(1,1) (GARCH z dodatkowym
+parametrem asymetrii `o=1`, wychwytującym efekt dźwigni) na stopach
+zwrotu. Zapisuje oszacowane parametry oraz histogramy ich rozkładów.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_GJRGARCH_1000.xlsx, wykresy_gjrgarch_parametry/*.png
+
+----------------------------------------------------------------------
+
+gjrgarch.py - GJR-GARCH(1,1) estimation (full sample, firm-by-firm)
+
+Fits a GJR-GARCH(1,1) model (GARCH with an additional asymmetry
+parameter `o=1`, capturing the leverage effect) to each company's
+return series. Saves the estimated parameters and histograms of their
+distributions.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_GJRGARCH_1000.xlsx, wykresy_gjrgarch_parametry/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
