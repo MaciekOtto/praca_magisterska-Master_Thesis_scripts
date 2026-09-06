@@ -23,6 +23,21 @@ Wejście:
 Wyjście:
   - ff3_bety_spolek.xlsx            (β dla każdej spółki)
   - ff3_regresja_przekrojowa.xlsx   (wyniki regresji przekrojowej)
+
+
+capm_3factors.py — CAPM / Fama-French (FF3) cross-sectional regression
+
+Goal: test whether a firm's exposure to risk factors explains
+cross-sectional differences in forecast errors (RMSE). Two stages:
+(1) for each company, CAPM (market only) and FF3 (market, SMB, HML)
+betas are estimated from its returns and the Fama-French factors;
+(2) a cross-sectional regression of RMSE (from each of the six models)
+on the estimated betas is run, with HAC standard errors.
+
+Input: dane1000stopy.xlsx, F-F_Research_Data_Factors_daily.txt,
+       garch_rmse_mae.xlsx, rf_rmse_mae.xlsx, lstm_rmse_mae.xlsx,
+       svr_rmse_mae.xlsx
+Output: ff3_bety_spolek.xlsx, ff3_regresja_przekrojowa.xlsx
 """
 
 import pandas as pd
