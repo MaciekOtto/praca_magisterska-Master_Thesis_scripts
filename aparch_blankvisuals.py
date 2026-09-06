@@ -1,5 +1,5 @@
 """
-aparch_blankvisuals.py - Wcześniejszy/alternatywny wariant aparch.py
+aparch_blankvisuals.py - Alternatywny wariant aparch.py
 
 Wariant aparch.py z tą samą metodą estymacji APARCH(1,1), różniący się
 szczegółami wizualizacji i/lub nazwami plików wyjściowych. Pozostawiony
@@ -10,7 +10,7 @@ Wyjście: pliki wynikowe analogiczne do aparch.py (inne nazwy)
 
 ----------------------------------------------------------------------
 
-aparch_blankvisuals.py - Earlier/alternate variant of aparch.py
+aparch_blankvisuals.py - Alternate variant of aparch.py
 
 A variant of aparch.py using the same APARCH(1,1) estimation method,
 differing in visualization details and/or output filenames. Kept as a
