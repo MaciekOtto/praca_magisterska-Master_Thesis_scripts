@@ -1,3 +1,31 @@
+"""
+svr_oos_rw.py - Prognozy out-of-sample: SVR
+
+Dla każdej spółki trenuje model SVR (Support Vector Regression, kernel
+RBF) do prognozowania zmienności (realized variance, r²) na podstawie
+cech opóźnionych (LAG=5) w schemacie rozszerzającego się okna
+(TRAIN_SIZE=1250, model przetrenowywany okresowo co RETRAIN_EVERY
+kroków). Obliczenia zrównoleglone, z checkpointami.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: svr_prognozy_oos.parquet, svr_rmse_mae.xlsx,
+         checkpoints_svr/
+
+----------------------------------------------------------------------
+
+svr_oos_rw.py - Out-of-sample forecasts: SVR
+
+For each company, trains an SVR (Support Vector Regression, RBF
+kernel) model to forecast volatility (realized variance, r²) using
+lagged features (LAG=5) in an expanding-window scheme (TRAIN_SIZE=1250,
+the model is periodically retrained every RETRAIN_EVERY steps).
+Computation is parallelized, with checkpoints.
+
+Input: dane1000stopy.xlsx
+Output: svr_prognozy_oos.parquet, svr_rmse_mae.xlsx,
+        checkpoints_svr/
+"""
+
 import pandas as pd
 import numpy as np
 from sklearn.svm import SVR
