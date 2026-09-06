@@ -1,3 +1,25 @@
+"""
+log_returns.py - Obliczanie logarytmicznych stóp zwrotu
+
+Wczytuje ceny zamknięcia i liczy dzienne logarytmiczne stopy zwrotu:
+r_t = ln(P_t / P_{t-1}). Pierwszy wiersz (bez zdefiniowanej stopy
+zwrotu) jest usuwany.
+
+Wejście: dane1000close.xlsx
+Wyjście: dane1000stopy.xlsx
+
+----------------------------------------------------------------------
+
+log_returns.py - Log return computation
+
+Loads closing prices and computes daily log returns:
+r_t = ln(P_t / P_{t-1}). The first row (with no defined return) is
+dropped.
+
+Input: dane1000close.xlsx
+Output: dane1000stopy.xlsx
+"""
+
 import pandas as pd
 import numpy as np
 
