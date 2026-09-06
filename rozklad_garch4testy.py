@@ -1,3 +1,32 @@
+"""
+rozklad_garch4testy.py - Diagnostyka rozkładu parametrów GARCH
+
+Ponownie szacuje model GARCH(1,1) dla każdej spółki (na przeskalowanych
+x100 stopach zwrotu), a następnie dla każdego parametru (omega, alpha,
+beta, suma alpha+beta) przeprowadza test normalności i
+dopasowuje najlepiej pasujący rozkład teoretyczny (spośród: normalny,
+log-normalny, t-Studenta) metodą najmniejszych kwadratów (SSE) na
+histogramie.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_GARCH_testy_statystyczne.xlsx (2 arkusze: parametry i
+         wyniki testów statystycznych), analiza_rozkladow_garch1/*.png
+
+----------------------------------------------------------------------
+
+rozklad_garch4testy.py - GARCH parameter distribution diagnostics
+
+Re-estimates a GARCH(1,1) model for each company (on returns scaled by
+100), then for each parameter (omega, alpha, beta, alpha+beta sum)
+runs a normality test and fits the best-matching
+theoretical distribution (among normal, log-normal, Student's t) to
+the parameter histogram via least-squares (SSE).
+
+Input: dane1000stopy.xlsx
+Output: wyniki_GARCH_testy_statystyczne.xlsx (2 sheets: parameters and
+        statistical test results), analiza_rozkladow_garch1/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
