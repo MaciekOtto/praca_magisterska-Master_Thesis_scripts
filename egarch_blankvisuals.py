@@ -1,5 +1,5 @@
 """
-egarch_blankvisuals.py - Wcześniejszy/alternatywny wariant egarch.py
+egarch_blankvisuals.py - Alternatywny wariant egarch.py
 
 Wariant egarch.py z tą samą metodą estymacji EGARCH(1,1), różniący się
 szczegółami wizualizacji i/lub nazwami plików wyjściowych. Pozostawiony
@@ -10,7 +10,7 @@ Wyjście: pliki wynikowe analogiczne do egarch.py (inne nazwy)
 
 ----------------------------------------------------------------------
 
-egarch_blankvisuals.py - Earlier/alternate variant of egarch.py
+egarch_blankvisuals.py - Alternate variant of egarch.py
 
 A variant of egarch.py using the same EGARCH(1,1) estimation method,
 differing in visualization details and/or output filenames. Kept as a
