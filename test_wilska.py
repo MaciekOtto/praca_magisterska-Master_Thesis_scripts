@@ -1,3 +1,29 @@
+"""
+test_wilska.py - Test normalności Shapiro-Wilka
+
+Dla każdej spółki przeprowadza test Shapiro-Wilka na cenach zamknięcia
+(pełny okres), aby sprawdzić normalność rozkładu - H0: rozkład
+normalny (p > 0.05 = brak podstaw do odrzucenia). Generuje też wykres
+słupkowy podsumowujący liczbę spółek z rozkładem normalnym / bez.
+
+Wejście: dane1000close.xlsx
+Wyjście: wyniki_shapiro_pelny_okres.xlsx,
+         podsumowanie_shapiro_pelny_okres.png
+
+----------------------------------------------------------------------
+
+test_wilska.py - Shapiro-Wilk normality test
+
+Runs the Shapiro-Wilk test on each company's closing-price series
+(full period) to test for normality - H0: normal distribution
+(p > 0.05 = fail to reject). Also produces a bar chart summarizing the
+number of companies with / without a normal distribution.
+
+Input: dane1000close.xlsx
+Output: wyniki_shapiro_pelny_okres.xlsx,
+        podsumowanie_shapiro_pelny_okres.png
+"""
+
 import pandas as pd
 import numpy as np
 from scipy.stats import shapiro
