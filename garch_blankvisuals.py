@@ -1,3 +1,27 @@
+"""
+garch_blankvisuals.py - Alternatywny wariant garch.py
+
+Niemal identyczny z garch.py (ta sama estymacja GARCH(1,1) na pełnej
+próbie), z drobnymi różnicami w zapisywanych wykresach (m.in. dodatkowy
+histogram parametru Omega, inne ustawienia KDE) i innymi nazwami
+plików wyjściowych. Pozostawiony jako punkt odniesienia.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: wyniki_GARCH_czyste.xlsx, wykresy_garch_czyste/*.png
+
+----------------------------------------------------------------------
+
+garch_blankvisuals.py - Alternate variant of garch.py
+
+Nearly identical to garch.py (same full-sample GARCH(1,1) estimation),
+with minor differences in the plots produced (e.g. an extra Omega
+histogram, different KDE settings) and different output filenames.
+Kept as a reference.
+
+Input: dane1000stopy.xlsx
+Output: wyniki_GARCH_czyste.xlsx, wykresy_garch_czyste/*.png
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
