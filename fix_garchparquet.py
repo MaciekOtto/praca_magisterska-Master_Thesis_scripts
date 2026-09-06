@@ -1,3 +1,29 @@
+"""
+fix_garchparquet.py - Naprawa formatu kolumn w pliku prognoz GARCH
+
+Narzędzie pomocnicze uruchamiane, gdy zapis wielopoziomowych kolumn
+(MultiIndex: model, ticker) w pliku parquet z prognozami GARCH-rodziny
+zostanie zserializowany niepoprawnie (jako tekstowe reprezentacje
+krotek `np.str_(...)` zamiast właściwego MultiIndex). Odczytuje plik,
+odtwarza poprawny MultiIndex kolumn i zapisuje naprawioną wersję.
+
+Wejście: garch_prognozy_oos.parquet
+Wyjście: garch_prognozy_oos_fixed.parquet
+
+----------------------------------------------------------------------
+
+fix_garchparquet.py - Fixes column format in the GARCH forecast file
+
+Helper script run when the multi-level columns (MultiIndex: model,
+ticker) of the GARCH-family forecast parquet file get serialized
+incorrectly (as text representations of tuples, `np.str_(...)`,
+instead of a proper MultiIndex). Reads the file, reconstructs the
+correct column MultiIndex, and writes the fixed version.
+
+Input: garch_prognozy_oos.parquet
+Output: garch_prognozy_oos_fixed.parquet
+"""
+
 import pandas as pd
 import pyarrow.parquet as pq
 import pyarrow as pa
