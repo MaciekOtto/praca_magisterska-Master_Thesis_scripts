@@ -1,3 +1,25 @@
+"""
+egarch_blankvisuals.py - Wcześniejszy/alternatywny wariant egarch.py
+
+Wariant egarch.py z tą samą metodą estymacji EGARCH(1,1), różniący się
+szczegółami wizualizacji i/lub nazwami plików wyjściowych. Pozostawiony
+jako punkt odniesienia.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: pliki wynikowe analogiczne do egarch.py (inne nazwy)
+
+----------------------------------------------------------------------
+
+egarch_blankvisuals.py - Earlier/alternate variant of egarch.py
+
+A variant of egarch.py using the same EGARCH(1,1) estimation method,
+differing in visualization details and/or output filenames. Kept as a
+reference.
+
+Input: dane1000stopy.xlsx
+Output: result files analogous to egarch.py (different names)
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
