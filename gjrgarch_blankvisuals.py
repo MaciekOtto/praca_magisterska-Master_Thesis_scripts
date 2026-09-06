@@ -1,3 +1,25 @@
+"""
+gjrgarch_blankvisuals.py - Alternatywny wariant gjrgarch.py
+
+Wariant gjrgarch.py z tą samą metodą estymacji GJR-GARCH(1,1),
+różniący się szczegółami wizualizacji i/lub nazwami plików
+wyjściowych. Pozostawiony jako punkt odniesienia.
+
+Wejście: dane1000stopy.xlsx
+Wyjście: pliki wynikowe analogiczne do gjrgarch.py (inne nazwy)
+
+----------------------------------------------------------------------
+
+gjrgarch_blankvisuals.py - Alternate variant of gjrgarch.py
+
+A variant of gjrgarch.py using the same GJR-GARCH(1,1) estimation
+method, differing in visualization details and/or output filenames.
+Kept as a reference.
+
+Input: dane1000stopy.xlsx
+Output: result files analogous to gjrgarch.py (different names)
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
