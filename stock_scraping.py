@@ -2,7 +2,7 @@
 stock_scraping.py - Pobieranie danych giełdowych (NASDAQ)
 
 Pobiera dzienne ceny zamknięcia dla spółek z listy `nasdaq_top500.csv`
-za pomocą biblioteki yfinance, dla okresu 2020-02-12 - 2025-11-13.
+za pomocą biblioteki yfinance, dla okresu 2020-02-12 - 2025-11-12.
 Spółki z niepełną historią (mniej niż 90% dni roboczych z danymi) są
 odrzucane, a pozostałe uzupełniane metodą forward-fill względem pełnego
 kalendarza dni roboczych.
@@ -16,7 +16,7 @@ stock_scraping.py - Stock price data download (NASDAQ)
 
 Downloads daily closing prices for the companies listed in
 `nasdaq_top500.csv` via the yfinance library, for the period
-2020-02-12 to 2025-11-13. Companies with incomplete history (less than
+2020-02-12 to 2025-11-12. Companies with incomplete history (less than
 90% of business days with data) are dropped; the remaining series are
 forward-filled against the full business-day calendar.
 
