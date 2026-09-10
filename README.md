@@ -2,7 +2,7 @@
 
 Repozytorium zawiera kod źródłowy (Python) wykorzystany w empirycznej części pracy magisterskiej poświęconej porównaniu klasycznych modeli rodziny GARCH (GARCH, EGARCH, GJR-GARCH, APARCH) oraz metod uczenia maszynowego (Random Forest, LSTM, SVR) w prognozowaniu zmienności stóp zwrotu, w kontekście słabej formy hipotezy rynku efektywnego (EMH) oraz hipotezy rynku adaptacyjnego (AMH).
 
-Próba badawcza obejmuje **1000 spółek notowanych na NASDAQ**, dla których wykorzystano dzienne ceny zamknięcia z okresu **12.02.2020 - 13.11.2025**, pobrane za pomocą biblioteki `yfinance`.
+Próba badawcza obejmuje **1000 spółek notowanych na NASDAQ**, dla których wykorzystano dzienne ceny zamknięcia z okresu **12.02.2020 - 12.11.2025**, pobrane za pomocą biblioteki `yfinance`.
 
 ## Spis treści
 
