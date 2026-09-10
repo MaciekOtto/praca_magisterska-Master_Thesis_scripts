@@ -2,7 +2,7 @@
 
 This repository contains the Python source code used in the empirical part of a master's thesis comparing classical GARCH-family models (GARCH, EGARCH, GJR-GARCH, APARCH) against machine learning methods (Random Forest, LSTM, SVR) for forecasting return volatility, in the context of the weak-form Efficient Market Hypothesis (EMH) and the Adaptive Market Hypothesis (AMH).
 
-The empirical sample covers **1,000 NASDAQ-listed companies**, using daily closing prices from **2020-02-12 to 2025-11-13**, sourced via the `yfinance` library.
+The empirical sample covers **1,000 NASDAQ-listed companies**, using daily closing prices from **2020-02-12 to 2025-11-12**, sourced via the `yfinance` library.
 
 ## Table of Contents
 
